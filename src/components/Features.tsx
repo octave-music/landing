@@ -10,12 +10,12 @@ export default function Features() {
     {
       icon: <Wifi className="w-6 h-6" />,
       title: "High Quality Streaming",
-      description: "Crystal clear audio up to 320kbps"
+      description: "Crystal clear audio up to lossless FLAC and OPUS audio"
     },
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Unlimited Skips",
-      description: "Skip as many tracks as you want"
+      description: "Skip as many tracks as you want, go ahead its fine"
     },
     {
       icon: <Heart className="w-6 h-6" />,

@@ -41,16 +41,22 @@ export default function Developers() {
               Access our comprehensive suite of APIs and development tools to integrate Octave's music streaming capabilities into your applications. Whether you're building a mobile app, website, or connected device, we've got you covered.
             </p>
             <div className="flex gap-4">
-              <button className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition">
+              <a 
+                href="https://github.com/octave-music/frontend" 
+                className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition"
+              >
                 Get API Key
-              </button>
-              <button className="border border-purple-600 text-purple-400 px-6 py-3 rounded-full hover:bg-purple-600/10 transition">
+              </a>
+              <a 
+                href="https://github.com/octave-music/frontend" 
+                className="border border-purple-600 text-purple-400 px-6 py-3 rounded-full hover:bg-purple-600/10 transition"
+              >
                 View Documentation
-              </button>
+              </a>
             </div>
           </div>
           <DeviceMockup 
-            image="https://picsum.photos/seed/dev1/600/800"
+            image="/public/phone-2.png"
             alt="Developer Tools"
           />
         </div>
@@ -72,7 +78,7 @@ export default function Developers() {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <DeviceMockup 
-            image="https://picsum.photos/seed/dev2/600/800"
+            image="/public/phone-1.png"
             alt="Code Example"
           />
           <div>
@@ -91,6 +97,9 @@ export default function Developers() {
                 <p className="text-gray-400">Ready-to-use example projects to jumpstart your development.</p>
               </div>
             </div>
+            <p className="text-gray-400 mt-6">
+              Octave is open source on <a href="https://github.com/octave-music/frontend" className="text-purple-600 hover:underline">GitHub</a>. Check out the repository for more information and documentation.
+            </p>
           </div>
         </div>
       </div>

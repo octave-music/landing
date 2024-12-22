@@ -52,11 +52,11 @@ export default function Hero() {
               Stream millions of songs without ads, offline playback, and unlimited skips. No credit card required.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-12">
-              <button className="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition flex items-center justify-center gap-2">
+              <button className="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition flex items-center justify-center gap-2"  onClick={() => window.open('https://beta.octave.gold', '_blank')}>
               <Play size={18} fill="white" />
                   
               </button>
-              <button className="border border-white text-white px-6 py-2 rounded-full hover:bg-white/10 transition">
+              <button className="border border-white text-white px-6 py-2 rounded-full hover:bg-white/10 transition"  onClick={() => window.open('/about', '_blank')}>
                 Learn More
               </button>
             </div>

@@ -3,21 +3,21 @@ import { Star } from 'lucide-react';
 export default function Testimonials() {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      avatar: "https://picsum.photos/seed/user1/100/100",
-      quote: "I can't believe this is completely free! The sound quality is amazing and I love the personalized playlists.",
+      name: "Mango",
+      avatar: "https://cdn.discordapp.com/avatars/612286260580712468/7dbc113f33f8d02bdf1a10745d3ef339.webp?size=80",
+      quote: "love the offline mode, it's a lifesaver when I'm on the go",
       rating: 5
     },
     {
-      name: "Michael Chen",
-      avatar: "https://picsum.photos/seed/user2/100/100",
-      quote: "The offline mode is a game-changer for my commute. No more streaming issues in the subway!",
+      name: "Alive",
+      avatar: "https://images-ext-1.discordapp.net/external/k3TurtS7kNaYR9qsQ27RKqtCgqWl4YbSv6Ck-ly60do/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/383910519867703298/1915e2b8a378df13d57e4a2c741ad092.png?format=webp&quality=lossless&width=420&height=420",
+      quote: "me no pay me like free music",
       rating: 5
     },
     {
-      name: "Emma Wilson",
-      avatar: "https://picsum.photos/seed/user3/100/100",
-      quote: "Best music platform I've used. The interface is clean and it has all the features I need.",
+      name: "Ziad Senior",
+      avatar: "https://images-ext-1.discordapp.net/external/oQo3_suoffyffjaqlqmGJwEuqHdA7Az59uRsBDkocF8/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/324718383733932033/aa026cf7019d31b1412ba6cdd27b4b68.png?format=webp&quality=lossless&width=405&height=405",
+      quote: "finally found an app that just works! high quality audio, downloading for offline use and even a clean UI",
       rating: 5
     }
   ];
@@ -36,15 +36,17 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="p-6 rounded-xl bg-gradient-to-br from-purple-900/10 to-transparent border border-purple-900/20"
+              className="p-6 rounded-xl bg-gradient-to-br from-purple-900/10 to-transparent border border-purple-900/20 flex flex-col justify-between"
             >
-              <div className="flex gap-2 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                ))}
+              <div>
+                <div className="flex gap-2 mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                  ))}
+                </div>
+                <p className="text-gray-300 mb-6">"{testimonial.quote}"</p>
               </div>
-              <p className="text-gray-300 mb-6">"{testimonial.quote}"</p>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 mt-auto">
                 <img 
                   src={testimonial.avatar} 
                   alt={testimonial.name}

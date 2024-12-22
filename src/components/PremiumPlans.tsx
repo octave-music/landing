@@ -5,25 +5,25 @@ export default function PremiumPlans() {
     {
       name: "Free",
       price: "$0",
-      description: "Everything you need to start listening",
+      description: "What our competitors offer",
       features: [
         "Ad-supported listening",
         "Basic audio quality",
-        "Mobile app access",
+        "No offline playback",
         "Limited skips"
       ]
     },
     {
       name: "Premium",
       price: "$0",
-      description: "Enhanced features, still free",
+      description: "Way more features, still free",
       features: [
         "Ad-free listening",
         "High quality audio (320kbps)",
         "Unlimited skips",
         "Offline mode",
         "Lyrics sync",
-        "Custom playlists"
+        "Lossless audio (FLAC and OPUS)"
       ]
     }
   ];
