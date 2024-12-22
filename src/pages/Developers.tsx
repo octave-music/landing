@@ -56,7 +56,7 @@ export default function Developers() {
             </div>
           </div>
           <DeviceMockup 
-            image="/public/phone-2.png"
+            image="/phone-2.png"
             alt="Developer Tools"
           />
         </div>
@@ -78,7 +78,7 @@ export default function Developers() {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <DeviceMockup 
-            image="/public/phone-1.png"
+            image="/phone-1.png"
             alt="Code Example"
           />
           <div>

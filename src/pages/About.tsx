@@ -21,13 +21,13 @@ export default function About() {
             </p>
           </div>
           <DeviceMockup 
-            image="/public/phone-1.png"
+            image="/phone-1.png"
             alt="About Octave"
           />
         </div>
         <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
           <DeviceMockup 
-            image="/public/phone-2.png"
+            image="/phone-2.png"
             alt="Our Values"
           />
           <div>
